@@ -153,7 +153,7 @@ public class MemberController {
     @PostMapping("/sendOne")
     public String sendOne(String memberTel) {
         Message message = new Message();
-        this.messageService = NurigoApp.INSTANCE.initialize("NCSFSLKFU5JQF16Z", "4L0VM1ASNF9CSLSZDMWLNQLDZXSGYG7B", "https://api.coolsms.co.kr");
+        this.messageService = NurigoApp.INSTANCE.initialize("API KEY 입력1", "API KEY 입력2", "https://api.coolsms.co.kr");
         // 발신번호 및 수신번호는 반드시 01012345678 형태로 입력되어야 합니다.
 
         // verificationCode => 인증번호 5자리
